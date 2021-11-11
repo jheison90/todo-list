@@ -8470,8 +8470,8 @@ function Tareas(props) {
    * mostrar los detalles
    */
 
-  function seleccionarTareaBuscar(datoSeleccionado) {
-    handleTareaSeleccionada(tarea.id, tarea);
+  function seleccionarTareaBuscar(tarea) {
+    handleTareaSeleccionada(tarea[0].id, tarea[0]);
   }
   /**
    * Cerrar el modal 

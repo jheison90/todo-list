@@ -282,9 +282,9 @@ function Tareas(props) {
      * Ir a la tarea especifica cuando se selecciona en el campo de autocompletar y
      * mostrar los detalles
      */
-    function seleccionarTareaBuscar(datoSeleccionado) {
-
-        handleTareaSeleccionada(tarea.id, tarea);
+    function seleccionarTareaBuscar(tarea) {
+        
+        handleTareaSeleccionada(tarea[0].id, tarea[0]);
 
     }
 
