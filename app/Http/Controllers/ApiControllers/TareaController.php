@@ -148,7 +148,7 @@ class TareaController extends Controller
          * Validar datos ingresado
          */
         $validated = $request->validate([
-            'nombre' => 'required|max:20',
+            'nombre' => 'required|max:100',
             'descripcion' => 'max:100',
             'fecha_finalizacion' => 'date'
         ]);
