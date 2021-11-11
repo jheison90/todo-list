@@ -17,6 +17,7 @@ class SubTarea extends Model
     protected $fillable = [
         'nombre',
         'descripcion',
+        'finalizado',
         'tarea_id'
     ];
 

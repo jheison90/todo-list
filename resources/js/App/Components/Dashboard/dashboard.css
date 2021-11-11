@@ -1,0 +1,13 @@
+.list-group {
+    transition: background-color .3s;
+}
+
+.list-group-active {
+    background-color: rgb(150, 191, 255);
+}
+
+@media (min-width: 768px) {
+    .modal-backdrop.show {
+        display: none !important;
+    }
+}

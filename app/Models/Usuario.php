@@ -42,13 +42,24 @@ class Usuario extends Authenticatable
         'fecha_verificacion_email' => 'datetime',
     ];
 
+    /**
+     * Nombre de la tabla
+     */
+
     protected $table = 'usuario';
 
     /**
      * Obtener la tarea asociada al usuario.
      */
-    public function tareas()
+    public function tarea()
     {
-        return $this->hasMany('App\Tarea');
+        return $this->hasMany('App\Models\Tarea');
+    }
+    /**
+     * Obtener las categorias asociada al usuario.
+     */
+    public function categorias()
+    {
+        return $this->hasMany('App\Models\Categoria');
     }
 }

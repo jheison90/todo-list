@@ -18,9 +18,14 @@ class Tarea extends Model
         'nombre',
         'descripcion',
         'fecha_finalizacion',
+        'finalizado',
+        'categoria_id',
         'usuario_id'
     ];
 
+    /**
+     * Nombre de la tabla
+     */
     protected $table = 'tarea';
 
     /**
@@ -28,7 +33,7 @@ class Tarea extends Model
      */
     public function usuario()
     {
-        return $this->belongsTo('App\Usuario');
+        return $this->belongsTo('Usuario');
     }
 
     /**
@@ -36,6 +41,14 @@ class Tarea extends Model
      */
     public function subTarea()
     {
-        return $this->hasMany('App\SubTarea');
+        return $this->hasMany('SubTarea');
+    }
+
+    /**
+     * Obtener la categoria asociado a la tarea.
+     */
+    public function categoria()
+    {
+        return $this->belongsTo('App\Models\Categoria');
     }
 }
