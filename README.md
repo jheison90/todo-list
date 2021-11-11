@@ -10,6 +10,8 @@ Backend:
 Frontend:
 
     - ReactJs v17.0.2 (Javascript).
+       - TypeHead
+       - React-paginator 
     - Bootstrap v5.1.3 (React-bootstrap) para el diseño responsive.
     - Axios para llamados a la API.
 
