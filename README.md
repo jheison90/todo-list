@@ -1,11 +1,11 @@
 
-Aplicación de gestión de tares (To Do).
+Aplicación de gestión de tareas (To Do).
 
 Backend:
 
     - Laravel 8 (PHP) para Backend
     - Base de datos MySql
-    - Sistema de autenticación por tokens en ves de sesion.
+    - Sistema de autenticación por tokens en vez de sesión.
 
 Frontend:
 
@@ -16,4 +16,4 @@ Frontend:
     - Axios para llamados a la API.
 
 
-La aplicacón se encuentra alojada dentro de una instancia de AWS servido por NGINX.
+La aplicación se encuentra alojada dentro de una instancia de AWS servido por NGINX.
